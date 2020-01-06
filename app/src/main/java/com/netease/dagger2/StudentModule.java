@@ -12,4 +12,9 @@ public class StudentModule {
         return new Student(99);
     }
 
+
+    @Provides
+    public String testString() {
+        return "";
+    }
 }

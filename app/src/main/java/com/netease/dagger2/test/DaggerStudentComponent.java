@@ -46,7 +46,7 @@ public final class DaggerStudentComponent implements StudentComponent {
     return builder().build();
   }
 
-  //todo 2 首先实例化了 StudentModule_GetStudentFactory，然后将实例化的对象传递给MainActivity_MembersInjector进行实例化
+  //todo 2 首先实例化了 StudentModule_GetStudentFactory(对应到了StudentModule里面的方法，有两个方法的话，会有两个Factory)，然后将实例化的对象传递给MainActivity_MembersInjector进行实例化
   // StudentModule_GetStudentFactory实现了interface Provider<T> { T get(); }， 并且会实现get方法，get方法最后调用到了module.getStudent()
   // todo3最后调用的就是module.getStudent()
   // MainActivity_MembersInjector实现了interface MembersInjector<T> { void injectMembers(T instance);}

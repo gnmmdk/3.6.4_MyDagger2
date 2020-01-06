@@ -23,6 +23,9 @@ public class MainActivity extends AppCompatActivity {
     @Inject
     public Student student;
 
+    @Inject
+    String stt;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
